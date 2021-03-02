@@ -6,7 +6,7 @@ const uid = () => {
     return Date.now().toString(36) + Math.random().toString(36).substr(2);
 };
 
-const initialBlock = {id: uid(), html: "", tag: "p"};
+const initialBlocks = [{id: uid(), html: "Welcome.", tag: "h1"}, {id: uid(), html: "Type '/' to bring up the block type menu", tag: "p"}];
 
 class EditablePage extends React.Component {
     constructor(props) {
@@ -14,7 +14,7 @@ class EditablePage extends React.Component {
         this.updatePageHandler = this.updatePageHandler.bind(this);
         this.addBlockHandler = this.addBlockHandler.bind(this);
         this.deleteBlockHandler = this.deleteBlockHandler.bind(this);
-        this.state = {blocks: [initialBlock]};
+        this.state = {blocks: [...initialBlocks]};
     }
 
     updatePageHandler(updatedBlock) {
