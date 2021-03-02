@@ -1,0 +1,44 @@
+body {
+  background-color: rgb(28, 28, 28);
+  color: white
+}
+
+.Page {
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.Block {
+  background-color: rgb(18, 18, 18);
+  padding: 12px;
+  outline: #ffffff00 solid 1px;
+  transition: all 200ms ease-out;
+}
+
+.Block:focus {
+  outline: #ffffff2f solid 1px;
+}
+
+.SelectMenu {
+  color: black;
+  width: fit-content;
+  border-radius: 8px;
+}
+
+.Items > div {
+  padding: 12px;
+  background-color: #ffffff;
+  transition: all 200ms ease-out;
+}
+
+.Items >div:first-child {
+  border-radius: 8px 8px 0 0;
+}
+
+.Items >div:last-child {
+  border-radius: 0 0 8px 8px;
+}
+
+.Items .Selected {
+  background-color: #dadada;
+}
