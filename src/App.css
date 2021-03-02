@@ -3,6 +3,13 @@ body {
   color: white
 }
 
+.TitleBlock {
+  max-width: 1200px;
+  margin: 40px auto;
+  text-align: center;
+  font-size: 48px;
+}
+
 .Page {
   max-width: 1200px;
   margin: 40px auto;
